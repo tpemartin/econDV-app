@@ -1,0 +1,18 @@
+data : HomeCredit Default Risk
+
+plots tables(package) (server?)
+
+
+1. combine the other file with id or not?
+
+2. how to define the parameter of data analysis
+	(rare, correlations, NAs...)
+
+ optional
+
+3. try to group the columns and use it to plot
+
+4. have a grade algorithm for any choosen data
+
+5. trying dimensionality reduction and visualization it
+ (to avoid curse of dimensionality)
