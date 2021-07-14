@@ -1,18 +1,30 @@
 data : HomeCredit Default Risk
 
+using R for plots and interactions
+	python for data cleaning
+
 plots tables(package) (server?)
 
 
 1. combine the other file with id or not?
 
-2. how to define the parameter of data analysis
+2. define the parameter of data analysis
 	(rare, correlations, NAs...)
 
- optional
+ optional:
 
-3. try to group the columns and use it to plot
+3. group the columns (by files) and use it to plot 
+	(Pie chart seens good in here)
 
 4. have a grade algorithm for any choosen data
 
 5. trying dimensionality reduction and visualization it
  (to avoid curse of dimensionality)
+
+## random choose about 1000 data for plot?
+	choose by "group" (interaction)
+	(because original size of data is too large)
+
+選連續 離散資料
+再選兩個資料
+畫出四種不同的圖

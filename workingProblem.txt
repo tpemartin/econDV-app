@@ -1,0 +1,31 @@
+in the shinyExample2
+ui_herritage.Rmd
+
+have to run heritage_martin.R first 
+due to the wierd source fail
+
+server_herritage.Rmd
+
+the same source problem but worse
+
+even I paste the whole R file it still runs error
+
+cant mix it 
+
+
+############################# sloved
+
+in myEcon
+
+cant transform my ggplot to plotly
+it will show error when I click bulid App
+
+#############################
+
+next to do :
+
+Do different plots for different datas
+
+	cant do if else in plot
+	
+	maybe try to do it in shiny?
