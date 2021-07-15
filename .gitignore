@@ -10,3 +10,6 @@
 *.woff2
 *.json
 *.csv
+.Rproj.user
+
+**/.*/**
