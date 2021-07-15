@@ -28,16 +28,20 @@ input_bins = 30
 input = "AMT_ANNUITY"
 input2 = "CONTRACT_TYPE"
 
-select1<-select(sample,input)
-select2<-select(sample,input2)
-
+input_varible1 = input
+input_varible2 = input2
 ```
+
 
 ## input
 
-```{r makecondition_input1}
-input_varible1 = input
-input_varible2 = input2
+```{r select1}
+select1<-select(sample,input_varible1)
+```
+
+
+```{r select2}
+select2<-select(sample,input_varible2)
 ```
 
 
@@ -54,6 +58,7 @@ render_distPlot <- plotly::renderPlotly
 
 ```{r output_distPlot}
 output_distPlot <- {
+  
   if (is.character(select1[1,1])) {
       if (is.character(select2[1,1])){
         plotOutcome <- ggplot(data = sample) + geom_count(

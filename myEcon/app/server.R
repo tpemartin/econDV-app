@@ -11,17 +11,20 @@ sample$TARGET = as.character(sample$TARGET)
 input = "AMT_ANNUITY"
 input2 = "CONTRACT_TYPE"
 
-select1<-select(sample,input)
-select2<-select(sample,input2)
-
 
 
 # server --------
 
 server <- function(input, output){
+select1 <- reactive({
+    select(sample, input$varible1)
+})
+select2 <- reactive({
+    select(sample, input$varible2)
+})
 output$distPlot <- plotly::renderPlotly({
-    if (is.character(select1[1, 1])) {
-        if (is.character(select2[1, 1])) {
+    if (is.character(select1()[1, 1])) {
+        if (is.character(select2()[1, 1])) {
             plotOutcome <- ggplot(data = sample) + geom_count(aes(x = get(input$varible1), 
                 y = get(input$varible2)))
         }
@@ -31,7 +34,7 @@ output$distPlot <- plotly::renderPlotly({
         }
     }
     else {
-        if (is.character(select2[1, 1])) {
+        if (is.character(select2()[1, 1])) {
             plotOutcome <- ggplot(data = sample) + geom_col(aes(x = get(input$varible1), 
                 y = get(input$varible2)))
         }
